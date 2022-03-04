@@ -1,0 +1,17 @@
+- Сделал fork.
+- Добавил upstream командой git remote add upstream <url>.
+- Сделал fetch git fetch upstream.
+- Перешел на upstream/master git chackout upstream/master.
+- Создал ветку backport из upstream от ветки master от коммита d535f3592006b8f2593c9f881d72c05164aadc13 git checkout -b backport d535f3.
+- Залил ветку git push --set-upstream origin backport.
+- Добавил upstream-other командой git remote add upstream-other <url>.
+- Перешел на master git chackout master.
+- Смержил с ветки master из remote upstream-other git merge upstream-other/master.
+- Создал файл remotes.
+- Зарегистрировал изменения git add ..
+- Закомитил файл remotes git commit -m "Add remotes file".
+- Загрузил изменения на гитхаб git push --set-upstream origin master.
+- Создал файл howto.md.
+- Зарегистрировал изменения git add ..
+- Закомитил файл howto.md git commit -m "Add howto.md file".
+- Загрузил изменения на гитхаб git push.
